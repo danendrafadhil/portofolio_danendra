@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101b19">
+    <meta name="description" content="Danendra Fadhil's portfolio: a software engineering student learning to build thoughtful, responsive web experiences.">
+    <title>Danendra Fadhil | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="site-shell">
+        <header class="navbar">
+            <a class="logo" href="#top" aria-label="Danendra, back to top">danendra<span>.</span></a>
+            <div class="nav-wrapper">
+                <nav aria-label="Main navigation">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <button id="btnToggleTema" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                    <span class="theme-icon" aria-hidden="true">☾</span>
+                    <span id="themeLabel">Dark mode</span>
+                </button>
+            </div>
+        </header>
+
+        <main id="top">
+            <section class="hero" id="about" aria-labelledby="hero-title">
+                <nav class="hero-socials" aria-label="Social links">
+                    <a href="https://github.com/danendrafadhil" target="_blank" rel="noopener noreferrer" aria-label="Visit Danendra on GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.24-5.07-5.5 0-1.21.43-2.2 1.15-2.98-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.06 1.14a10.65 10.65 0 0 1 5.57 0c2.12-1.44 3.06-1.14 3.06-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.98 0 4.27-2.6 5.21-5.08 5.49.4.35.76 1.02.76 2.06v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=danendrafadhil.abiyu11@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Compose an email to Danendra in Gmail">
+                        <svg class="gmail-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6l9 7 9-7"/><path d="M3 6v12"/><path d="M21 6v12"/></svg>
+                    </a>
+                </nav>
+                <div class="hero-text">
+                    <p class="eyebrow"><span class="status-dot"></span> STUDENT DEVELOPER · MALANG, INDONESIA</p>
+                    <h1 id="hero-title">Building with<br><span>curiosity & code.</span></h1>
+                    <p class="hero-lede">I'm <strong>Danendra Fadhil</strong>, a grade 10 Software Engineering student at SMKN 1 Kepanjen and UBIG Industry Class. I'm learning web development by building projects, trying things out, and improving with each one.</p>
+                    <div class="hero-actions">
+                        <button id="btnKontak" class="button button-primary" type="button">Let's talk <span aria-hidden="true">↗</span></button>
+                        <a class="text-link" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <p class="hero-note"><span>01 / 03</span> Currently learning with UBIG Industry Class</p>
+                </div>
+                <div class="hero-portrait">
+                    <div class="portrait-frame">
+                        <img src="danendra_portofolio.jpg" alt="Portrait of Danendra Fadhil">
+                    </div>
+                    <span class="portrait-stamp" aria-hidden="true">LEARNING<br>BY BUILDING</span>
+                </div>
+            </section>
+
+            <section class="quick-facts" aria-label="Portfolio at a glance">
+                <div class="fact">
+                    <span class="fact-number">10th</span>
+                    <div class="fact-copy"><span>GRADE</span><p>Software Engineering</p></div>
+                </div>
+                <div class="fact">
+                    <span class="fact-number">03</span>
+                    <div class="fact-copy"><span>PROJECTS</span><p>Built through industry class</p></div>
+                </div>
+                <div class="fact">
+                    <span class="fact-number">05</span>
+                    <div class="fact-copy"><span>CORE SKILLS</span><p>Learning by building</p></div>
+                </div>
+            </section>
+
+            <section class="skills" aria-labelledby="skills-title">
+                <div class="section-kicker" id="skills-title">WHAT I'M WORKING WITH</div>
+                <div class="skills-grid">
+                    <span>HTML5 <b>↗</b></span>
+                    <span>CSS3 & Flexbox <b>↗</b></span>
+                    <span>Responsive design <b>↗</b></span>
+                    <span>JavaScript & DOM <b>↗</b></span>
+                    <span>Git & GitHub <b>↗</b></span>
+                </div>
+            </section>
+
+            <section id="projects" class="projects" aria-labelledby="projects-title">
+                <div class="projects-heading">
+                    <div>
+                        <p class="eyebrow">A FEW THINGS I'VE BUILT SO FAR</p>
+                        <h2 id="projects-title">Selected <span>projects.</span></h2>
+                    </div>
+                    <p class="projects-intro">A growing collection of hands-on work, from my first profile page to interactive web experiences.</p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <img class="project-screenshot" src="modul1.png" alt="" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>MODULE 01</span><span>HTML · CSS</span></div>
+                            <h3>My First Profile</h3>
+                            <p>My first profile page, made while learning how to structure content with HTML and style it with CSS.</p>
+                            <div class="project-actions">
+                                <a class="project-button project-button-primary" href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/danendrafadhil/Modul-1-smkn1kepanjen/main/modul1.html" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                                <a class="project-button" href="https://github.com/danendrafadhil/Modul-1-smkn1kepanjen" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <img class="project-screenshot" src="modul2.png" alt="" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>MODULE 02</span><span>FLEXBOX · RWD</span></div>
+                            <h3>Responsive Profile</h3>
+                            <p>A profile page practice project that uses Flexbox and media queries to fit different screens.</p>
+                            <div class="project-actions">
+                                <a class="project-button project-button-primary" href="https://modul-2-danendra.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                                <a class="project-button" href="https://github.com/danendrafadhil/Modul-2-smkn1kepanjen" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-preview">
+                            <img class="project-screenshot" src="modul3.png" alt="" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta"><span>MODULE 03</span><span>JAVASCRIPT · DOM</span></div>
+                            <h3>Interactive Portfolio</h3>
+                            <p>A small JavaScript project where I practiced changing themes and opening a contact dialog.</p>
+                            <div class="project-actions">
+                                <a class="project-button project-button-primary" href="https://modul-3-danendra.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                                <a class="project-button" href="https://github.com/danendrafadhil/Modul-3-smkn1kepanjen" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section" aria-labelledby="contact-title">
+                <p class="eyebrow">OPEN TO PROJECTS &amp; COLLABORATIONS</p>
+                <div class="contact-row">
+                    <h2 id="contact-title">Let's build<br><span>something together.</span></h2>
+                    <div class="contact-copy">
+                        <p>Have an idea for a website or want to collaborate on a project? I'd love to hear what you're working on.</p>
+                        <button id="btnContactFooter" class="button button-outline" type="button">Start a conversation <span aria-hidden="true">↗</span></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="modalKontak" class="modal-overlay" aria-hidden="true">
+            <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" tabindex="-1">
+                <button id="btnTutupModal" class="modal-close" type="button" aria-label="Close contact dialog">×</button>
+                <p class="eyebrow">SAY HELLO</p>
+                <h2 id="modal-title">I'd love to hear from you.</h2>
+                <p id="modal-description">Reach me by email and I'll get back to you as soon as I can.</p>
+                <a href="mailto:danendrafadhil.abiyu11@gmail.com" class="modal-email">danendrafadhil.abiyu11@gmail.com <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="footer-main">
+                <div class="footer-identity">
+                    <a class="footer-name" href="#top">Danendra Fadhil Abiyu Hadianto<span>.</span></a>
+                    <p>Student developer · Malang, Indonesia</p>
+                    <div class="footer-socials" aria-label="Social and email links">
+                        <a href="https://github.com/danendrafadhil" target="_blank" rel="noopener noreferrer" aria-label="Visit Danendra on GitHub">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.24-1.62-1.24-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.71-1.49-2.47-.28-5.07-1.24-5.07-5.5 0-1.21.43-2.2 1.15-2.98-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.06 1.14a10.65 10.65 0 0 1 5.57 0c2.12-1.44 3.06-1.14 3.06-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.98 0 4.27-2.6 5.21-5.08 5.49.4.35.76 1.02.76 2.06v3.08c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=danendrafadhil.abiyu11@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Compose an email to Danendra in Gmail">
+                            <svg class="gmail-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5v12"/><path d="M3 7l9 7 9-7"/><path d="M21 6.5v12"/><path d="M3 7l2-2 7 5.5L19 5l2 2"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <span>EXPLORE</span>
+                    <a href="#about">About me</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Get in touch</a>
+                </nav>
+                <span class="footer-monogram" aria-hidden="true">DF</span>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Danendra Fadhil Abiyu Hadianto <span>·</span> Made in Malang</p>
+                <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
