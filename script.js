@@ -17,7 +17,7 @@ function setTheme(theme) {
     localStorage.setItem('portfolio-theme', theme);
 }
 
-setTheme(localStorage.getItem('portfolio-theme') || 'light');
+setTheme(localStorage.getItem('portfolio-theme') || 'dark');
 
 themeButton.addEventListener('click', function() {
     setTheme(document.body.classList.contains('dark-mode') ? 'light' : 'dark');
