@@ -1174,7 +1174,7 @@ footer p span {
         padding: 0;
     }
 
-    .theme-toggle #themeLabel {
+    .theme-toggle #theme-toggle-label {
         position: absolute;
         width: 1px;
         height: 1px;

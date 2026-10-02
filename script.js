@@ -1,18 +1,18 @@
-const themeButton = document.querySelector('#btnToggleTema');
-const themeLabel = document.querySelector('#themeLabel');
+const themeButton = document.querySelector('#theme-toggle-button');
+const themeToggleLabel = document.querySelector('#theme-toggle-label');
 const themeIcon = document.querySelector('.theme-icon');
 const themeColor = document.querySelector('meta[name="theme-color"]');
-const contactButtons = document.querySelectorAll('#btnKontak, #btnContactFooter');
-const contactModal = document.querySelector('#modalKontak');
+const contactButtons = document.querySelectorAll('#hero-contact-button, #footer-contact-button');
+const contactModal = document.querySelector('#contact-modal');
 const contactDialog = contactModal.querySelector('.modal-box');
-const closeModalButton = document.querySelector('#btnTutupModal');
+const closeModalButton = document.querySelector('#close-contact-modal');
 let lastFocusedElement;
 
 function setTheme(theme, animate = true) {
     const updateTheme = function() {
         const isLight = theme === 'light';
         document.body.classList.toggle('dark-mode', !isLight);
-        themeLabel.textContent = isLight ? 'Dark mode' : 'Light mode';
+        themeToggleLabel.textContent = isLight ? 'Dark mode' : 'Light mode';
         themeIcon.textContent = isLight ? '☾' : '☼';
         themeButton.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} mode`);
         themeButton.setAttribute('aria-pressed', String(!isLight));
