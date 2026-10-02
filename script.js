@@ -1,64 +1,57 @@
-const themeButton = document.querySelector('#theme-toggle-button');
-const themeToggleLabel = document.querySelector('#theme-toggle-label');
+const themeBtn = document.querySelector('#theme-toggle-button');
+const themeLabel = document.querySelector('#theme-toggle-label');
 const themeIcon = document.querySelector('.theme-icon');
-const themeColor = document.querySelector('meta[name="theme-color"]');
-const contactButtons = document.querySelectorAll('#hero-contact-button, #footer-contact-button');
-const contactModal = document.querySelector('#contact-modal');
-const contactDialog = contactModal.querySelector('.modal-box');
-const closeModalButton = document.querySelector('#close-contact-modal');
-let lastFocusedElement;
+const themeMeta = document.querySelector('meta[name="theme-color"]');
+const contactBtns = document.querySelectorAll('#hero-contact-button, #footer-contact-button');
+const modal = document.querySelector('#contact-modal');
+const closeBtn = document.querySelector('#close-contact-modal');
 
-function setTheme(theme, animate = true) {
-    const updateTheme = function() {
-        const isLight = theme === 'light';
-        document.body.classList.toggle('dark-mode', !isLight);
-        themeToggleLabel.textContent = isLight ? 'Dark mode' : 'Light mode';
-        themeIcon.textContent = isLight ? '☾' : '☼';
-        themeButton.setAttribute('aria-label', `Switch to ${isLight ? 'dark' : 'light'} mode`);
-        themeButton.setAttribute('aria-pressed', String(!isLight));
-        themeColor.setAttribute('content', isLight ? '#ffffff' : '#050605');
-    };
-
-    if (animate && typeof document.startViewTransition === 'function') {
-        document.startViewTransition(updateTheme);
+function setTheme(theme) {
+    if (theme === 'light') {
+        document.body.classList.remove('dark-mode');
+        themeLabel.textContent = 'Dark mode';
+        themeIcon.textContent = '☾';
+        themeMeta.setAttribute('content', '#ffffff');
     } else {
-        updateTheme();
+        document.body.classList.add('dark-mode');
+        themeLabel.textContent = 'Light mode';
+        themeIcon.textContent = '☼';
+        themeMeta.setAttribute('content', '#050605');
     }
 }
 
-setTheme('dark', false);
+setTheme('dark');
 
-themeButton.addEventListener('click', function() {
-    setTheme(document.body.classList.contains('dark-mode') ? 'light' : 'dark');
-});
-
-function openContactModal() {
-    lastFocusedElement = document.activeElement;
-    contactModal.classList.add('show');
-    contactModal.setAttribute('aria-hidden', 'false');
-    contactDialog.focus();
-}
-
-function closeContactModal() {
-    contactModal.classList.remove('show');
-    contactModal.setAttribute('aria-hidden', 'true');
-    lastFocusedElement?.focus();
-}
-
-contactButtons.forEach(function(button) {
-    button.addEventListener('click', openContactModal);
-});
-
-closeModalButton.addEventListener('click', closeContactModal);
-
-contactModal.addEventListener('click', function(event) {
-    if (event.target === contactModal) {
-        closeContactModal();
+themeBtn.addEventListener('click', function () {
+    if (document.body.classList.contains('dark-mode')) {
+        setTheme('light');
+    } else {
+        setTheme('dark');
     }
 });
 
-window.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape' && contactModal.classList.contains('show')) {
-        closeContactModal();
+function openModal() {
+    modal.classList.add('show');
+}
+
+function closeModal() {
+    modal.classList.remove('show');
+}
+
+contactBtns.forEach(function (btn) {
+    btn.addEventListener('click', openModal);
+});
+
+closeBtn.addEventListener('click', closeModal);
+
+modal.addEventListener('click', function (e) {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        closeModal();
     }
 });
