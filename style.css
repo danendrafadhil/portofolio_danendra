@@ -953,7 +953,7 @@ footer.site-footer {
 .footer-monogram {
     position: absolute;
     right: 150px;
-    bottom: -58px;
+    bottom: 0;
     color: transparent;
     font-size: 10rem;
     font-weight: 800;
@@ -1270,7 +1270,7 @@ footer p span {
 
     .footer-monogram {
         right: 54px;
-        bottom: -24px;
+        bottom: 0;
         font-size: 7rem;
     }
 
