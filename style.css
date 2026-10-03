@@ -50,6 +50,7 @@ html {
 }
 
 body {
+    color-scheme: only light;
     overflow-x: clip;
     background-color: var(--bg);
     background-image:
