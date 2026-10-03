@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
 
 :root {
+    color-scheme: only light;
     --bg: #ffffff;
     --card: #ffffff;
     --card-2: #f3f5f3;
@@ -19,6 +20,7 @@
 }
 
 body.dark-mode {
+    color-scheme: only dark;
     --bg: #050605;
     --card: #111311;
     --card-2: #1a1d1a;
