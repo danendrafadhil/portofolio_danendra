@@ -20,7 +20,6 @@
 }
 
 body.dark-mode {
-    color-scheme: only dark;
     --bg: #050605;
     --card: #111311;
     --card-2: #1a1d1a;
