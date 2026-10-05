@@ -260,20 +260,15 @@ button:focus-visible {
     transform: translateY(-2px);
 }
 
-.socials svg,
-.footer-socials svg {
+.social-icon {
     width: 19px;
     height: 19px;
-    fill: currentColor;
+    display: block;
+    object-fit: contain;
 }
 
-.socials .gmail-icon,
-.footer-socials .gmail-icon {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 1.8;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+body.dark-mode .social-icon {
+    filter: invert(1);
 }
 
 .label,
